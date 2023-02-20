@@ -49,7 +49,7 @@ Little Lemon needs to build a robust relational database system in MySQL in whic
 
 Create a normalized ER diagram (that adheres to 1NF, 2NF and 3NF) with relevant relationships to meet the data requirements of Little Lemon
 
-I first created a conceptual model using draw.io  to understand how the tables will relate to each other
+I first created a conceptual model using draw.io to understand how the tables will relate to each other. Some customers and staff could have multiple addresses, to apply data atomicity I created Addresses tables for both and relate them to the respective tables.
 
 ![LittleLemon Conceptual Model drawio](https://user-images.githubusercontent.com/106580846/220125229-c49fee58-fc28-404d-819a-7bb7d04995b1.png)
 
@@ -57,4 +57,10 @@ Then created the ER diagram
 
 ![LittleLemonDM](https://user-images.githubusercontent.com/106580846/220124784-862769a0-eb7a-48d9-95cf-ae08f84391a7.png)
 
+**Implementing the Little Lemon data model inside your MySQL server using the forward engineer method**
 
+I used the Database tab to start the forward engineering process, followed the subseqent steps and this is the script that was generated to create the LittleLemon database
+
+*its too long to paste it all here, its in the files labelled as "LitleLemonDB Script to forward engineer.sql"*
+
+![fw](https://user-images.githubusercontent.com/106580846/220127139-02204671-7411-4adf-b654-fb2d5ebef381.png)
