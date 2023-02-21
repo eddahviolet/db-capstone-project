@@ -65,6 +65,11 @@ I used the Database tab to start the forward engineering process, followed the s
 
 ![fw](https://user-images.githubusercontent.com/106580846/220127139-02204671-7411-4adf-b654-fb2d5ebef381.png)
 
+**Populating Tables**
+I populated my tables with self generated data, using Kenyan names, Kenyan Foods and Cuisines, the full script is in the files saved as "Popoltaing tables in LittleLemonDB"
+
+![pop](https://user-images.githubusercontent.com/106580846/220350533-0c68889c-d441-4270-bb2c-bcc73dff0f9e.png)
+
 ## Week 2 Database Queries, Procedures and Prepared Statements
 #### Adding Sales Report
 ##### Create a virtual table to summarize data
@@ -132,13 +137,53 @@ Little Lemon wants to populate the Bookings table of their database with some re
 
 ![image](https://user-images.githubusercontent.com/106580846/220131459-71da2bc3-11c2-4ddf-adc1-2bd368cc21be.png)
 
-![Bookings Table](https://user-images.githubusercontent.com/106580846/220131542-67de8486-2020-4c65-b9fb-fca867871f82.png)
+![Bookings Table](https://user-images.githubusercontent.com/106580846/220350848-b42e884a-5cbf-4e9e-9688-2c747dac2754.png)
+
 
 ##### Task 2: Create Procedure CheckBooking
 Little Lemon need you to create a stored procedure called CheckBooking to check whether a table in the restaurant is already booked.
 The procedure should have two input parameters in the form of booking date and table number. Create a variable in the procedure to check the status of each table.
 
+**I decided to alter the table removing the not null constraint on the booking time column, the StaffID and CustomerID being foreign keys, I maintained the not null constraint and use a value of zero for the insert statement.**
+
+**BookingID column is on auto increment so you don’t have to list it in the columns for the insert statement**
+
 ![CheckBooking](https://user-images.githubusercontent.com/106580846/220133093-d859f6e3-2ebc-461a-992e-0a74e5eba248.png)
+
+##### Task 3: Create a Procedure called AddValidBooking
+Little Lemon need to verify a booking, and decline any reservations for tables that are already booked under another name. To implementing this they require a stored procedure and a transaction.
+Create a new procedure called AddValidBooking that must use a transaction statement to perform a rollback if a customer reserves a table that’s already booked under another name.  
+*	The procedure should include two input parameters in the form of booking date and table number.
+*	It also requires at least one variable and should begin with a START TRANSACTION statement.
+*	Your INSERT statement must add a new booking record using the input parameter's values.
+*	Use an IF ELSE statement to check if a table is already booked on the given date. 
+*	If the table is already booked, then rollback the transaction. If the table is available, then commit the transaction
+
+##### Create SQL queries to add and update bookings
+Little Lemon needs help with managing their bookings. They need you to create stored procedures that they can invoke as required to add, update and delete bookings in their database
+##### Task 1: Create a procedure called AddBooking
+Create a new procedure called AddBooking to add a new table booking record. The procedure should include four input parameters in the form of the following bookings parameters:
+*	booking id
+*	customer id 
+*	booking date
+*	table number
+
+**My booking table has a StaffID column I will not include it in the variables but have it in the insert statement with a value of 0, the booking record can be updated later with StaffID of the assigned staff.**
+
+![AddBooking](https://user-images.githubusercontent.com/106580846/220352148-2fac3770-e971-4892-ae18-9fb3d0d2a31c.png)
+
+##### Task 2: Create a Procedure called UpdateBooking
+Create a new procedure called UpdateBooking that can be used to update existing bookings in the Bookings table. The procedure should have two input parameters in the form of booking id and booking date. You must also include an UPDATE statement inside the procedure. 
+
+**I use the booking id variable as the condition in the update statement and updating the BookingDate column**
+![UpdateBooking](https://user-images.githubusercontent.com/106580846/220352340-e42b787c-5b8c-4869-9015-331c534b8d69.png)
+
+##### Task 3: Create Procedure called CancelBooking
+Little Lemon need you to create a procedure called CancelBooking that they can use to cancel or remove a booking. The procedure should have one input parameter in the form of booking id. Write a DELETE statement inside the procedure. 
+![CancelBooking](https://user-images.githubusercontent.com/106580846/220352632-22cab2dd-e08a-4515-87f0-9f0067f8977d.png)
+
+## Week 3: Clients & Visualistaion
+#### Create interactive dashboard for sales and profits
 
 
 
