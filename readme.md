@@ -183,7 +183,13 @@ Little Lemon need you to create a procedure called CancelBooking that they can u
 ![CancelBooking](https://user-images.githubusercontent.com/106580846/220352632-22cab2dd-e08a-4515-87f0-9f0067f8977d.png)
 
 ## Week 3: Clients & Visualistaion
-#### Create interactive dashboard for sales and profits
+#### Data Visualisation
+##### Set up the Tableau Workspace for data analysis
+
+
+
+
+##### Create interactive dashboard for sales and profits
 
 
 
