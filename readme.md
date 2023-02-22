@@ -100,6 +100,7 @@ Little Lemon needs you to find all menu items for which more than 2 orders have 
 *	Use the ANY operator in a subquery
 *	The outer query should be used to select the menu name from the menus table.
 *	The inner query should check if any item quantity in the order table is more than 2. 
+**I will target my column ItemNames that is similar to MenuNames and is in the MenuItems table to give the same results required by the task**
 
 ![Week 2c Subquery](https://user-images.githubusercontent.com/106580846/220129404-2ffef2a5-ff14-4e68-b8a8-92f4abc9304e.png)
 
@@ -119,6 +120,8 @@ Little Lemon need you to help them to create a prepared statement called GetOrde
 *	Create a variable called id and assign it value of 1. 
 *	Execute the GetOrderDetail prepared statement 
 
+**I will use BookingID instead of customerID since that is the foreign key in my Orders table**
+
 ![Week 2e GetOrderDetail Prepared Statement](https://user-images.githubusercontent.com/106580846/220130605-74226511-6af9-46df-862e-aa3450c4f138.png)
 
 ##### Task 3: Create Procedure CancelOrder
@@ -136,6 +139,8 @@ Little Lemon wants to populate the Bookings table of their database with some re
 *	Your output must resemble the following screenshot:
 
 ![image](https://user-images.githubusercontent.com/106580846/220131459-71da2bc3-11c2-4ddf-adc1-2bd368cc21be.png)
+
+**My table has an extra column a StaffID, a foreign key to link it to the Staff table**
 
 ![Bookings Table](https://user-images.githubusercontent.com/106580846/220350848-b42e884a-5cbf-4e9e-9688-2c747dac2754.png)
 
