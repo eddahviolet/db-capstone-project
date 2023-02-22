@@ -161,8 +161,7 @@ Create a new procedure called AddValidBooking that must use a transaction statem
 
 **I used LIMIT 1 in my select into statements to limit the result set to a single row because I kept getting “Error Code: 1172 results consisted of more than 1 row”**
 
-![Week 2i AddValidBooking Procedure](https://user-images.githubusercontent.com/106580846/220606440-d4f0d97e-9203-4e99-aa6b-9570f752d864.png)
-
+![Week 2i AddValidBooking Procedure](https://user-images.githubusercontent.com/106580846/220607217-bd7cc7c0-ae8c-4bdb-8758-80b3af39b50f.png)
 
 ##### Create SQL queries to add and update bookings
 Little Lemon needs help with managing their bookings. They need you to create stored procedures that they can invoke as required to add, update and delete bookings in their database
