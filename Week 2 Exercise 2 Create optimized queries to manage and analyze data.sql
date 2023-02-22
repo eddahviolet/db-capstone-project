@@ -1,4 +1,4 @@
--- Task 1: Create procedure 
+-- Task 1: Create Procedure GetMaxQuantity
 /*Create a procedure GetMaxQuantity that displays the maximum ordered quantity in the Orders table. */
 -- getting rid of produre with similar name if it exists
 drop procedure if exists GetMaxQuantity;
@@ -7,8 +7,9 @@ create procedure GetMaxQuantity() select Quantity from Orders order by Quantity 
 -- call procedure by its name
 call GetMaxQuantity();
 
--- Task 2: Prepared statement
-/*create a prepared statement called GetOrderDetail that accepts one input argument, 
+
+-- Task 2: Create Prepared Statement
+/*Create a prepared statement called GetOrderDetail that accepts one input argument, 
 CustomerID value, and returns OrderID, Quantity and Cost from Orders table. */
 -- I will use BookingID instead of customerID since that is the foreign key in my Orders table
  prepare GetOrderDetail from 'select OrderID, Quantity, TotalCost from Orders where 
@@ -18,9 +19,8 @@ CustomerID value, and returns OrderID, Quantity and Cost from Orders table. */
  -- executing the statemenet
  execute GetOrderDetail using @BookingID;
  
- -- Task 3:  Create Procedure
- /*Create a stored procedure called CancelOrder that deletes an order record based on the user input of the order id.
- */
+ -- Task 3:  Create Procedure CancelOrder
+ /*Create a stored procedure called CancelOrder that deletes an order record based on the user input of the order id.*/
  -- getting rid of produre with similar name if it exists
 drop procedure if exists CancelOrder;
  -- syntax to create procedure 
@@ -32,9 +32,10 @@ delete from orders where OrderID = order_id;
 select concat ("Order ", order_id, " is cancelled") as Confirmation;
 end //
 delimiter ;
- 
--- call procedure by its name with the required parameter
+ -- call procedure by its name with the required parameter
 call CancelOrder(5); 
+ 
+ 
  
  -- re-inserting the deleted record for subsequent exercises
  insert into Orders (OrderID, OrderDate, Quantity, TotalCost, DeliveryStatusID, MenuID, BookingID) values
