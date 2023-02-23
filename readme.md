@@ -195,6 +195,48 @@ Little Lemon need you to create a procedure called CancelBooking that they can u
 #### Data Visualisation
 ##### Set up the Tableau Workspace for data analysis
 
+Little Lemon have an Excel sheet file with thousands of records of data on orders made between 2019 and 2023. They want to analyze the sales data to examine how they can increase their profits. prepare the existing data before analyzing it.   
+##### Task 1: Filtering
+Connect to Little Lemon data stored in the Excel Sheet called LittleLemonDB. Then filter data in the data source page and select the United States as the country.
+###### Steps:
+* In the Connection Pane select Excel, then navigate to the data source which I saved as LittleLemonData
+* On the data source page, I selected Add Filter, selected field as “country”, in the general tab of the filter pop up, I selected from list the checked “United states” then Okayed everything
+
+This is how the Country Field looked like before applying the filter
+
+![Week 3a Before Filter](https://user-images.githubusercontent.com/106580846/220893605-75a05b39-28a2-4409-a4cb-c6ef9be5a475.png)
+
+This is how the Country Field looked like after applying the filter
+
+![Week 3a After Filter](https://user-images.githubusercontent.com/106580846/220893503-b139a5c4-38b6-4f4e-9f61-92d8288c2fc7.png)
+
+##### Task 2: Split Column
+Create two new data fields called First Name and Last Name. Related values should be extracted from the Full Name field.
+
+###### Steps
+* Locate the spit feature found in the downward arrow at the top of the customer Names column
+* Select Split
+* Rename the two new columns “Customer First name” and “Customer Last Name”
+* Hide the column with the full names
+
+![Week 3b Before Split](https://user-images.githubusercontent.com/106580846/220894139-fd99875d-5006-4c21-a34a-35bf3ae5d502.png)
+
+
+![Week 3b After Split](https://user-images.githubusercontent.com/106580846/220894144-6cfc17a9-1acf-4e29-a78a-55affa31e888.png)
+
+##### Task 3: Calculated Field
+Create a new data field that stores the profits for each sale, or order as shown in the screenshot below.
+###### Steps:
+* I select calculated field from down arrow in the Sales column
+* Name the calculated field “Profit”
+* Write a formula that deducts Cost from Sales. 
+
+The Calculated field
+![Week 3c Calculated Field](https://user-images.githubusercontent.com/106580846/220894451-1addc92e-7b77-4840-8c4e-887b3ebabe00.png)
+The new field "Profit"
+![Week 3c Profit Field](https://user-images.githubusercontent.com/106580846/220894496-62dac426-c820-4e22-adf2-7dfa8a1e99d0.png)
+
+
 
 
 
