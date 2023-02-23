@@ -252,8 +252,56 @@ Create a bar chart that shows customers sales and filter data based on sales wit
 
 If you roll over a bar, the customer names and sale figures will be displayed 
 
-Here is a link to the chart on Tableau Public https://public.tableau.com/views/CustomerSalesLittleLemon/Customerssales?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
+Here is a link to the Sales Bar chart on Tableau Public https://public.tableau.com/views/CustomerSalesLittleLemon/Customerssales?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
 
 ![Week 3d Customer Sales Bar Chart](https://user-images.githubusercontent.com/106580846/220898677-781ccd22-8254-44a8-8a65-010b447f8f75.png)
+
+##### Task 2: Line Chart
+Create a line chart to show the sales trend from 2019 to 2022. 
+###### My Steps:
+*	Drag the “Order Date” field to the Columns shelf
+*	Drag the “Profit” field to the Rows shelf
+*	Drag the “Order Date” field to the colour marker to give the line in the chart colour variations for each year
+*	From the down arrow on the “Order Date” field in the columns shelf, on the general tab, filter the years to exclude 2023, by unchecking 2023 in the list provided
+*	Name the chart Profit chart.
+
+Here is a link to the Profit Line chart on Tableau Public https://public.tableau.com/views/ProfitChartLittleLemon/ProfitChart?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
+
+![Week 3e Profit Line Chart](https://user-images.githubusercontent.com/106580846/220901420-645e97f0-614c-4b65-8c02-7778eb5be1bd.png)
+
+##### Task 3: Bubble Chart
+Create a Bubble chart of sales for all customers. The chart should show the names of all customers. Once you roll over a bubble, the chart should show the name, profit and sale.
+###### My steps:
+*	Drag the “Customer Name” field to the Column shelf
+*	Drag “Sales” to the rows shelf
+*	Select Packed bubbles from the “Show me” drop down
+*	Drag “Customer Name” to the colour marker to colour the bubbles differently
+*	Drag “Customer Name” to the label marker so that each bubble bears the name of the customer it represents
+*	Drag “Profit” field to the detail marker to display profit (along with customer name and Sales) when you hover on a bubble
+*	Name the chart Sales Bubble Chart.
+
+Here is a link to the Sales Bubble chart on Tableau Public https://public.tableau.com/views/SalesBubbleChartLittleLemon/SalesBubbleChart?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
+
+![bubble](https://user-images.githubusercontent.com/106580846/220904712-e460c9d8-bbf0-47f0-9aac-f7aac4ffe437.png)
+
+**FYI only reason I can think of why the Customer Names did not appear in all the bubbles is; I am using an old version of Tableau, the 2019 one**
+
+##### Task 4: Task 4: Side-by-side Bars
+Compare the sales of the three different cuisines sold at Little Lemon. Create a Bar chart that shows the sales of the Turkish, Italian and Greek cuisines.
+Display sales data for 2020, 2021, and 2022 only. Each bar should display the profit of each cuisine. Sort data in descending order by the sum of the sale.
+###### My steps:
+*	Drag “Cuisine Name” field to the Columns shelf
+*	Drag “Sales” field to the rows shelf
+*	Drag “Order Date” field on the column shelf next to “Cuisine Name”
+* Select side by side bars from Show me drop down menu
+*	From the down arrow on the “Order Date” field in the columns shelf, on the general tab, filter the years to exclude 2023 and 2019, by unchecking them both in the list provided
+*	Drag “Profit” field to the label marker so that it appears on top of each bar
+*	Drag “Order Date” field to the colour marker so that bars are coloured differently according to years
+*	Sort the Sales axis descending by sum of sales within order date
+*	Name the worksheet Cuisine Sales and Profits.
+
+Here is a link to the Cuisine Sales and Profits Side-by-side Bar chart on Tableau Public https://public.tableau.com/views/CuisineSalesandProfitsChartLittleLemon/CuisineSalesandProfits?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
+
+![bar](https://user-images.githubusercontent.com/106580846/220909190-eadd9b4a-373d-4511-8314-b9e3389f6d8c.png)
 
 
