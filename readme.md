@@ -304,4 +304,19 @@ Here is a link to the Cuisine Sales and Profits Side-by-side Bar chart on Tablea
 
 ![bar](https://user-images.githubusercontent.com/106580846/220909190-eadd9b4a-373d-4511-8314-b9e3389f6d8c.png)
 
+##### Task 5: Interactive Dashboard
+Create an interactive dashboard that combines the Bar chart called Customers sales and the Sales Bubble Chart. Once you click a bar, and roll over the related bubble, the name, sales and profit figures should be displayed in the Bubble chart.
+
+###### My Steps:
+*	Start a new dashboard by clicking the dashboard icon with the plus sign
+*	From the sheets pane drag the “Customer sales” sheet to the dashboard
+*	I used a tiled dashboard because there only two sheets so easy to arrange
+*	Then drag the “Sales bubble chart’ sheet into the dashboard below the “Customer sales” sheet
+*	Remove the legends of both sheets from the dash board by clicking the X in the legends
+*	Check the show dashboard title check box and name the dashboard “Sales DashBoard”
+*	Use the filter on the “Customer sales bar chart” 
+
+Here is a link to the interactive Dashboard on Tableau Public https://public.tableau.com/views/CustomerSalesDashboardLittleLemon/CustomerSalesSalesBubbleDashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
+
+![Week 3h Interactive DashBoard](https://user-images.githubusercontent.com/106580846/220918957-a8d3ba94-ffa8-4cf5-a4bd-83b21a3aaa19.png)
 
