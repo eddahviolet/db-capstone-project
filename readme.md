@@ -233,14 +233,27 @@ Create a new data field that stores the profits for each sale, or order as shown
 
 The Calculated field
 ![Week 3c Calculated Field](https://user-images.githubusercontent.com/106580846/220894451-1addc92e-7b77-4840-8c4e-887b3ebabe00.png)
+
 The new field "Profit"
 ![Week 3c Profit Field](https://user-images.githubusercontent.com/106580846/220894496-62dac426-c820-4e22-adf2-7dfa8a1e99d0.png)
 
-
-
-
-
 ##### Create interactive dashboard for sales and profits
+Little Lemon need you to create visual charts to help them understand their business performance, so they can increase their sales and profits.
+##### Task 1: Bar Chart
+Create a bar chart that shows customers sales and filter data based on sales with at least $70.
+###### My steps:
+* Drag “Customer Name” field to the Columns shelf
+* Drag “Sales” field to the Rows shelf
+* Drag  “Customer Name” to the Colour marker to make the bar differently coloured
+* From the down arrow on the “Sales” Filed in the Rows Shelf Filter “Sales” to “At Least 70”
+* On the chart, sort sales in descending order 
+* Drag Customer name and Sales field to the Detail marker
+* Name the chart Customers sales
 
+If you roll over a bar, the customer names and sale figures will be displayed 
+
+Here is a link to the chart on Tableau Public https://public.tableau.com/views/CustomerSalesLittleLemon/Customerssales?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
+
+![Week 3d Customer Sales Bar Chart](https://user-images.githubusercontent.com/106580846/220898677-781ccd22-8254-44a8-8a65-010b447f8f75.png)
 
 
