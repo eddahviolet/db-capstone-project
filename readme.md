@@ -100,6 +100,7 @@ Little Lemon needs you to find all menu items for which more than 2 orders have 
 *	Use the ANY operator in a subquery
 *	The outer query should be used to select the menu name from the menus table.
 *	The inner query should check if any item quantity in the order table is more than 2. 
+
 **I will target my column ItemNames that is similar to MenuNames and is in the MenuItems table to give the same results required by the task**
 
 ![Week 2c Subquery](https://user-images.githubusercontent.com/106580846/220129404-2ffef2a5-ff14-4e68-b8a8-92f4abc9304e.png)
@@ -347,5 +348,33 @@ Establish a connection between Python and your database
 * Verify that a connection can be made with your database by calling the connection method from the connector class:  connection = connector.connect (user = "user_name", password = "password")
 
 ![making connection](https://user-images.githubusercontent.com/106580846/221128339-30deef1e-3abe-4eaf-8868-b5abdc8e0140.png)
+
+#### Add query functions
+An integral part of a well-functioning system is the ability to query data. Little Lemon need you to help them add the search functionality required to query their data. 
+
+##### Task 1: Make connection & create Cursor object
+Connect with your database and interact with the data it holds. 
+
+Import the connector module, enter your user details and connect with the database such as
+
+**connection = connector.connect(user = "your_username", password = "your_password", db = "database_name")
+Instantiate an instance of cursor to pass queries and return results**
+
+![cursor object](https://user-images.githubusercontent.com/106580846/221130611-b7826ea2-ade4-4f8e-9b6e-142b10498576.png)
+
+##### Task 2: show tables
+Query the database to show all tables within the database. 
+**Ordersview is a virtual table, I originally have 9 tables in my database**
+
+![tables show](https://user-images.githubusercontent.com/106580846/221131073-6d644d09-2dce-4956-96bb-49140127f4ab.png)
+
+##### Task 3: Query with table JOIN
+Little Lemon need you to return specific details from your database. They require the full name and contact details for every customer that has placed an order greater than $60 for a promotional campaign. 
+
+**I will add BookingID to the query because my Customers table connects to the Orders table through the Bookings table**
+
+**I use the cast() function in my query to convert the output of TotalCost column which is decimal to char datatype**
+
+![join q](https://user-images.githubusercontent.com/106580846/221132231-607fbc55-f723-491e-9307-14c373481d90.png)
 
 
