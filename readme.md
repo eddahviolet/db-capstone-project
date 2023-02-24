@@ -320,3 +320,32 @@ Here is a link to the interactive Dashboard on Tableau Public https://public.tab
 
 ![Week 3h Interactive DashBoard](https://user-images.githubusercontent.com/106580846/220918957-a8d3ba94-ffa8-4cf5-a4bd-83b21a3aaa19.png)
 
+#### Database Client
+##### Set up the client project
+##### Task 1
+Navigate to your terminal and ensure that Python is installed and available on the command path. 
+![python instaled](https://user-images.githubusercontent.com/106580846/221126785-4f64f2d3-fd51-447d-8804-f901abc7468d.png)
+##### Task 2
+
+Install Jupyter 
+
+![install jupter](https://user-images.githubusercontent.com/106580846/221126995-2125038d-0853-48a4-b3c4-4efb218e789d.png)
+
+Open a notebook 
+
+![open notebook](https://user-images.githubusercontent.com/106580846/221127126-3e996a63-fe7c-4ec0-a6a8-3db009e75fc7.png)
+
+Create a new notebook for writing your code 
+
+![new notebook](https://user-images.githubusercontent.com/106580846/221127225-25494d90-0cf7-4816-96f0-3623db31eb7b.png)
+
+##### Task 3
+Establish a connection between Python and your database 
+###### Steps
+* Ensure that mysql-connector is installed by running the command:
+* Import the connector under the alias connector
+* Verify that a connection can be made with your database by calling the connection method from the connector class:  connection = connector.connect (user = "user_name", password = "password")
+
+![making connection](https://user-images.githubusercontent.com/106580846/221128339-30deef1e-3abe-4eaf-8868-b5abdc8e0140.png)
+
+
